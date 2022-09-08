@@ -3,12 +3,11 @@ import Filter from './Filter';
 import ContactList from './ContactList';
 import styled from 'styled-components';
 import toast, { Toaster }  from 'react-hot-toast';
-
-
 import { useSelector, useDispatch } from 'react-redux';
-import { addContact, removeContact } from 'redux/contacts/contacts-actions';
+
+import { addContact, removeContact } from 'redux/contacts/contacts-slice';
+import { setFilter } from 'redux/filter/filter-slice';
 import { getFilterContact } from 'redux/contacts/contacts-selector';
-import { setFilter } from 'redux/filter/filter-actions';
 import { getFilter } from 'redux/filter/filter-selector';
 
 
